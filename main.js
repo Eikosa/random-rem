@@ -2,6 +2,8 @@
 // @name         Random Rem
 // @namespace    http://tampermonkey.net/
 // @version      0.1
+// @updateURL    https://raw.githubusercontent.com/Eikosa/random-rem/main/main.js
+// @downloadURL  https://raw.githubusercontent.com/Eikosa/random-rem/main/main.js
 // @description  it shows random rem
 // @author       Eikosa
 // @match        https://*.remnote.com/*
