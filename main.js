@@ -132,7 +132,7 @@ GM_addStyle(`
 
 
                 let rnd;
-                rnd = Math.floor(Math.random()*(childs.length + 1));
+                rnd = Math.floor(Math.random()*(childs.length));
 
                 let random_rem_id = childs[rnd]
 
@@ -144,8 +144,9 @@ GM_addStyle(`
 
                 let wait = setInterval(function(){
                     try {
+                        //Rem(CURRENT_KNOWLEDGE_BASE).findOne(selected).goToRem();
+						selected.goToRem();
                         clearInterval(wait);
-                        Rem(CURRENT_KNOWLEDGE_BASE).findOne(selected).goToRem();
                         console.info(selected)
                         el.querySelector("svg").outerHTML = dice_svg;
                         el.querySelector("svg").style.marginRight = "8px";
